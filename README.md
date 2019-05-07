@@ -1,3 +1,3 @@
 # prototype
 
-Visit [https://virtuacode.github.io/prototype]
+Visit https://virtuacode.github.io/prototype
