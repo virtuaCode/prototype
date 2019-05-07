@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bowling</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        pre {
+            color: white;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        pre a {
+            color: goldenrod;
+        }
+
+        pre a:visited {
+            color: gold;
+        }
+    </style>
 </head>
+
 <body>
     <script src="js/three.min.js"></script>
+    <script src="js/controls/OrbitControls.js"></script>
+    <script src="js/loaders/MTLLoader.js"></script>
+    <script src="js/loaders/OBJLoader.js"></script>
     <script src="js/bowling.js"></script>
-    
+    <script src="js/autoresize.js"></script>
+    <pre>
+        <a href="index.html">>> CHECKERS</a>
+    </pre>
 </body>
+
 </html>
