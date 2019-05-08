@@ -3,44 +3,89 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <title>Projekt</title>
+
+    <meta name="description" content="Projekt">
+    <meta name="author" content="Michael Schmidt">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Checkers</title>
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
 
-        pre {
-            color: white;
-            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css" id="theme">
 
-        pre a {
-            color: goldenrod;
-        }
-
-        pre a:visited {
-            color: gold;
-        }
-    </style>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/css/monokai.css">
 </head>
 
 <body>
-    <script src="js/three.min.js"></script>
-    <script src="js/controls/OrbitControls.js"></script>
-    <script src="js/checkers.js"></script>
-    <script src="js/autoresize.js"></script>
+    <div class="reveal">
 
-    <pre>
-        <a href="bowling.html">>> BOWLING</a>
-    </pre>
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>3D-Design und Dynamik</h1>
+                <h3>Projekt Idee</h3>
+                <p>
+
+                </p>
+            </section>
+
+            <section data-background-iframe="checkers.html">
+                <h2>Checkers (Dame)</h2>
+                <!--<iframe data-src="checkers.html" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0"
+                    scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+                </iframe> -->
+            </section>
+
+            <section data-background-iframe="bowling.html">
+                <h2>Bowling</h2>
+                <!--<iframe data-src="bowling.html" width="445" height="355" frameborder="0" marginwidth="0"
+                    marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;"
+                    allowfullscreen> </iframe>-->
+            </section>
+
+            <section>
+                <h2>Technologien</h2>
+
+                <ol>
+                    <li>Unity 3D</li>
+                    <li>Blender</li>
+                    <li>ARCore</li>
+                    <li>Vuforia</li>
+                </ol>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
+    <script>
+
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/search/search.js', async: true },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.js', async: true }
+            ]//.map(obj => { obj.src = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/' + obj.src }),
+        });
+    </script>
 </body>
 
 </html>
