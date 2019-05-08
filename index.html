@@ -16,29 +16,64 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css" id="theme">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css" id="theme"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.css" id="theme"> -->
-
+    <style>
+        hr {
+            border: 2px solid white;
+        }
+    </style>
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/css/monokai.css">
 </head>
 
 <body>
+<script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const theme = urlParams.get('theme');
+
+        if (theme === "white") {
+            const link = document.createElement("link");
+
+            link.rel = "stylesheet";
+            link.href = "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.css";
+
+            document.head.appendChild(link);
+        } else {
+            const link = document.createElement("link");
+
+            link.rel = "stylesheet";
+            link.href = "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css";
+
+            document.head.appendChild(link);
+        }
+    </script>
+
     <div class="reveal">
 
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <h1>3D-Design und Dynamik</h1>
+                <h2>3D-Design und Dynamik</h2>
+                <hr>
                 <h3>Projekt Idee</h3>
+                <p>
+                    <em>Michael Schmidt</em>
+                </p>
             </section>
 
             <section>
                 <h2>Konzept</h2>
                 <ul>
-                    <li>3D Mini-Spiele</li>
-                    <li>Checkers, Bowling, Connect Four, ...</li>
+                    <li>3D Mini-Spiele
+                        <ul>
+                            <li>Checkers (Dame)</li>
+                            <li>Bowling</li>
+                            <li>Connect Four (Vier Gewinnt)</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
                     <li>Einfache Gegner KI</li>
                     <li>Projektion in reale Umgebung</li>
                     <li>Lauffähig auf Android-Smartphones</li>
