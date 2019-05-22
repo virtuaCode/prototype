@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Milestones</title>
+
+    <meta name="description" content="Milestones">
+    <meta name="author" content="Michael Schmidt">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css" id="theme"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.css" id="theme"> -->
+    <style>
+        hr {
+            border: 2px solid white;
+        }
+    </style>
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/css/monokai.css">
+</head>
+
+<body>
+<script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const theme = urlParams.get('theme');
+
+        if (theme === "white") {
+            const link = document.createElement("link");
+
+            link.rel = "stylesheet";
+            link.href = "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.css";
+
+            document.head.appendChild(link);
+        } else {
+            const link = document.createElement("link");
+
+            link.rel = "stylesheet";
+            link.href = "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css";
+
+            document.head.appendChild(link);
+        }
+    </script>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h2>Milestones</h2>
+                <hr>
+                <h3>Darts, Bowling, Connect Four</h3>
+                <p>
+                    <em>Michael Schmidt</em>
+                </p>
+            </section>
+
+            <section>
+                <h2>Darts Checklist</h2>
+                <ol>
+                  <li>Wurfphysik und Scoreberechnung <b>✓</b></li>
+                  <li>Lokaler-Mehrspieler-Modus <b>✓</b></li>
+                  <li>Verschiedene Spiel-Modi</li>
+                  <li>User-Interface</li>
+                  <li>Verschiedene Dartpfeile</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Bowling Checklist</h2>
+                <ol>
+                  <li>Interaktion mit Bowling-Kugel</li>
+                  <li>Scoring-System</li>
+                  <li>Lokaler-Mehrspieler-Modus</li>
+                  <li>User-Interface</li>
+                  <li>Animationen für Spare/Strike</li>
+                  <li>Eigene Bowling-Kugel-Designs</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Connect Four Checklist</h2>
+                <ol>
+                  <li>Interaktion mit Spielbrett</li>
+                  <li>KI-Gegner Implementierung</li>
+                </ol>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
+    <script>
+
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/search/search.js', async: true },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true },
+                //{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.js', async: true }
+            ]//.map(obj => { obj.src = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/' + obj.src }),
+        });
+    </script>
+</body>
+
+</html>
